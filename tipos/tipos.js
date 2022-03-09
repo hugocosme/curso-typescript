@@ -76,3 +76,20 @@ var calculo;
 //calculo()
 calculo = multiplicar;
 console.log(calculo(5, 6));
+//Objetos
+var usuario = {
+    nome: 'Hugo',
+    idade: 33
+};
+console.log(usuario);
+//usuario = {}
+//
+//usuario = {
+//    name = 'Maria',
+//    age = 34
+//}
+usuario = {
+    nome: 'maria',
+    idade: 35
+};
+console.log(usuario);
