@@ -34,3 +34,23 @@ console.log(hobbies)
 // tuplas (posso definir a ordem que os dados devem ser recebidos na variavel endereço)
 let endereco: [string, number, string] = ["Av brasil", 90, "hugo"]
 console.log (endereco)
+
+endereco = ["Rua dos teste", 99, "Bloco CD"]
+console.log(endereco)
+
+//enums
+enum Cor {
+    Cinza, //0
+    Verde = 100, //1
+    Azul = 2, //2
+    Laranja,
+    Amarelo,
+    Vermelho = 100
+}
+
+let minhaCor: Cor = Cor.Verde
+console.log(minhaCor)
+
+console.log(Cor.Azul)
+console.log(Cor.Laranja, Cor.Amarelo)
+console.log(Cor.Verde, Cor.Vermelho)
