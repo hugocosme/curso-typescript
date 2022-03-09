@@ -67,3 +67,12 @@ function multiplicar(numA, numB) {
 }
 //console.log(multiplicar(2, 'Bia'))
 console.log(multiplicar(4.3, 9));
+//const teste = function (a: number, b: number): boolean {
+//    return false
+//}
+//tipo função
+var calculo;
+//calculo = digaOi
+//calculo()
+calculo = multiplicar;
+console.log(calculo(5, 6));
