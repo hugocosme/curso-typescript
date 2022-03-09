@@ -14,7 +14,7 @@ let possueHibbies: boolean = true
 //possueHibbies = 1
 console.log(possueHibbies)
 
-// tipos explicitos
+// tipos explicitos (ao colocar : e o tipo como, number, string ou outros a variavel só podera receber aquele tipo de dado)
 let minhaIdade: number
 minhaIdade = 33
 console.log(typeof minhaIdade)

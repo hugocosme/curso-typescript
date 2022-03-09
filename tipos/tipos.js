@@ -12,7 +12,7 @@ console.log(idade);
 var possueHibbies = true;
 //possueHibbies = 1
 console.log(possueHibbies);
-// tipos explicitos
+// tipos explicitos (ao colocar : e o tipo como, number, string ou outros a variavel só podera receber aquele tipo de dado)
 var minhaIdade;
 minhaIdade = 33;
 console.log(typeof minhaIdade);
