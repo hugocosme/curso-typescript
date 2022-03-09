@@ -26,3 +26,6 @@ console.log(typeof hobbies);
 hobbies = [100, 200, 300];
 //hobbies = 100
 console.log(hobbies);
+// tuplas (posso definir a ordem que os dados devem ser recebidos na variavel endereço)
+var endereco = ["Av brasil", 90, "hugo"];
+console.log(endereco);
