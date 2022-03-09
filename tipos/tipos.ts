@@ -54,3 +54,9 @@ console.log(minhaCor)
 console.log(Cor.Azul)
 console.log(Cor.Laranja, Cor.Amarelo)
 console.log(Cor.Verde, Cor.Vermelho)
+
+//Any (pode ser utilizado em alguma migração entre js e ts, mas não deve ser utilizado de forma aleatoria)
+let carro: any = 'BMW'
+console.log(carro)
+carro = {marcar: 'BMW', ano:2019}
+console.log(carro)
