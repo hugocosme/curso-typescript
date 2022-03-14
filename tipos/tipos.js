@@ -181,3 +181,4 @@ var correntista = {
 };
 correntista.contaBancaria.depositar(4);
 console.log(correntista);
+//# sourceMappingURL=tipos.js.map
