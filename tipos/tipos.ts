@@ -161,3 +161,34 @@ nota = '10'
 console.log(`Minha nota é ${nota}!`)
 //nota = true
 //console.log(`Minha nota é ${nota}!`)
+
+// checagem de tipos
+let valor = 20
+//valor = false
+
+if (typeof valor === "number") {
+    console.log("É um number!")
+} else {
+    console.log(typeof valor)
+}
+
+//tipo NEVER
+
+function falha(msg: string): never {
+    throw new Error(msg)
+}
+
+const produto = {
+    nome: 'Sabão',
+    preco: 9,
+    validarProduto() {
+        if(!this.nome || this.nome.trim().length == 0) {
+            falha('Precisa ter um nome')
+        }
+        if(this.preco <= 0) {
+            falha('Preço Invalido!')
+        }
+    }
+}
+
+produto.validarProduto()
