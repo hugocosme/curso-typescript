@@ -151,6 +151,7 @@ var produto = {
     }
 };
 produto.validarProduto();
+//type NULL
 var alturaOpcional = 12;
 alturaOpcional = null;
 var contato1 = {
@@ -167,3 +168,16 @@ podeSerNulo = 12;
 console.log(podeSerNulo);
 podeSerNulo = 'abc';
 console.log(podeSerNulo);
+var contaBancaria = {
+    saldo: 3456,
+    depositar: function (valor) {
+        this.saldo += valor;
+    }
+};
+var correntista = {
+    nome: 'Hugo Cosme',
+    contaBancaria: contaBancaria,
+    contatos: ['09798986', '0978564331']
+};
+correntista.contaBancaria.depositar(4);
+console.log(correntista);

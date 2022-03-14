@@ -119,7 +119,7 @@ console.log(usuario)
 
 
 
-
+//Alias para um type
 type Funcionario = {
     supervisores: string [],
     baterPonto: (horas: number) => string
@@ -193,6 +193,8 @@ const produto = {
 
 produto.validarProduto()
 
+//type NULL
+
 let alturaOpcional: null | number = 12
 alturaOpcional = null
 
@@ -218,3 +220,32 @@ podeSerNulo = 12
 console.log(podeSerNulo)
 podeSerNulo = 'abc'
 console.log(podeSerNulo)
+
+//desafio para atribuir tipos
+
+type ContaBancaria = { // criado o type contabancaria e foi atribuido dentro da variavel 'contaBancaria' abaixo
+    saldo: number,
+    depositar: (valor: number) => void
+}
+
+let contaBancaria: ContaBancaria = {
+    saldo: 3456,
+    depositar(valor: number) {
+        this.saldo += valor
+    }
+}
+
+type Correntista = { // criado o type Correntista e atribuido dentro da variavel 'Correntista' abaixo
+    nome: string,
+    contaBancaria: ContaBancaria,
+    contatos: string[]
+}
+
+let correntista: Correntista = {
+    nome: 'Hugo Cosme',
+    contaBancaria: contaBancaria,
+    contatos: ['09798986','0978564331']
+}
+
+correntista.contaBancaria.depositar(4)
+console.log(correntista)
