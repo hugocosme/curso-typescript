@@ -151,3 +151,19 @@ var produto = {
     }
 };
 produto.validarProduto();
+var alturaOpcional = 12;
+alturaOpcional = null;
+var contato1 = {
+    nome: 'Fulano',
+    tel1: '998899880988',
+    tel2: null
+};
+console.log(contato1);
+console.log(contato1.nome);
+console.log(contato1.tel1);
+console.log(contato1.tel2);
+var podeSerNulo = null; //any!
+podeSerNulo = 12;
+console.log(podeSerNulo);
+podeSerNulo = 'abc';
+console.log(podeSerNulo);
