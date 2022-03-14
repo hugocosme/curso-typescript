@@ -104,6 +104,24 @@ var funcionario = {
         }
     }
 };
+var funcionario2 = {
+    supervisores: ['Hugo', 'Jessica'],
+    baterPonto: function (horario) {
+        if (horario <= 8) {
+            return 'Ponto OK';
+        }
+        else {
+            return 'Fora do horario!';
+        }
+    }
+};
 console.log(funcionario.supervisores);
 console.log(funcionario.baterPonto(8));
 console.log(funcionario.baterPonto(10));
+//union types
+var nota = 10; // para usar mais de um tipo em uma variavel
+console.log("Minha nota \u00E9 ".concat(nota, "!"));
+nota = '10';
+console.log("Minha nota \u00E9 ".concat(nota, "!"));
+//nota = true
+//console.log(`Minha nota é ${nota}!`)

@@ -128,7 +128,7 @@ type Funcionario = {
 let funcionario: Funcionario = {
     supervisores: ['Ana', 'Fernando'],
     baterPonto(horario: number): string {
-        if(horario <= 8 {
+        if(horario <= 8) {
             return 'Ponto OK'
         } else {
             return 'Fora do horario!'
@@ -142,7 +142,7 @@ let funcionario2: {
 } = {
     supervisores: ['Hugo', 'Jessica'],
     baterPonto(horario: number): string {
-        if(horario <= 8 {
+        if(horario <= 8) {
             return 'Ponto OK'
         } else {
             return 'Fora do horario!'
@@ -153,3 +153,11 @@ let funcionario2: {
 console.log(funcionario.supervisores)
 console.log(funcionario.baterPonto(8))
 console.log(funcionario.baterPonto(10))
+
+//union types
+let nota: number | string = 10 // para usar mais de um tipo em uma variavel
+console.log(`Minha nota é ${nota}!`)
+nota = '10'
+console.log(`Minha nota é ${nota}!`)
+//nota = true
+//console.log(`Minha nota é ${nota}!`)
