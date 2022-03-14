@@ -120,11 +120,27 @@ console.log(usuario)
 
 
 
-let funcionario: {
-    supervisores: string[],
+type Funcionario = {
+    supervisores: string [],
+    baterPonto: (horas: number) => string
+}
+
+let funcionario: Funcionario = {
+    supervisores: ['Ana', 'Fernando'],
+    baterPonto(horario: number): string {
+        if(horario <= 8 {
+            return 'Ponto OK'
+        } else {
+            return 'Fora do horario!'
+        }
+    }
+}
+
+let funcionario2: {
+    supervisores: string[], //posso passar o tipo direto assim, ou utilizando um tipo personalizado como na variavel acima 'funcionario'
     baterPonto: (horas:number) => string
 } = {
-    supervisores: ['Ana', 'Fernando'],
+    supervisores: ['Hugo', 'Jessica'],
     baterPonto(horario: number): string {
         if(horario <= 8 {
             return 'Ponto OK'
