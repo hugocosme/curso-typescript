@@ -93,3 +93,17 @@ usuario = {
     idade: 35
 };
 console.log(usuario);
+var funcionario = {
+    supervisores: ['Ana', 'Fernando'],
+    baterPonto: function (horario) {
+        if (horario <= 8) {
+            return 'Ponto OK';
+        }
+        else {
+            return 'Fora do horario!';
+        }
+    }
+};
+console.log(funcionario.supervisores);
+console.log(funcionario.baterPonto(8));
+console.log(funcionario.baterPonto(10));
